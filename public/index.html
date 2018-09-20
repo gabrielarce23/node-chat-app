@@ -5,5 +5,19 @@
     </head>
     <body>
         <p>Welcome to the chat app</p>
+        <a href="tel:+59899064178">Llamar a Gabi</a>
+        <script src="/socket.io/socket.io.js">      
+        </script>
+        <script>
+            var socket = io();
+
+            socket.on('connect',()=>{
+                console.log('Connected to server')
+            })
+
+            socket.on('disconect',()=>{
+                console.log('Disconnected from the server')
+            })
+        </script>
     </body>
 </html>
