@@ -17,14 +17,16 @@ io.on('connection', (socket)=>{
     
     console.log('New conection to server')
 
-    socket.emit('newMessage',{
-        from: 'User1',
-        text: 'Hello everyone!',
-        createAt: 123
-    })
+    
 
     socket.on('createMessage', (message) =>{
         console.log('createMessage',message)
+
+        io.emit('newMessage',{
+            from: message.from,
+            text: message.text,
+            createAt: new Date().getTime()
+        })
 
     })
 
