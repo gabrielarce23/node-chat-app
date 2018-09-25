@@ -1,0 +1,19 @@
+{
+    "name": "Chat Prueba Gabi",
+    "shor_name" : "GabiApp",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color":"#fff",
+    "theme_color": "#3F51B5",
+    "descripction": "Description",
+    "dir":"ltr",
+    "lang": "en-US",
+    "orientation": "portrait-primary",
+    "incons": [
+        {
+            "src": "/img/icon.png",
+            "type": "image/png",
+            "size": "48x48"
+        }
+    ]
+}
